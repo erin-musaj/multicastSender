@@ -25,11 +25,8 @@ public class MulticastSender {
                 socket.send(packet);
 
                 System.out.println("Inviato: " + message);
-
-                // Pausa di 1 secondo tra un invio e l’altro
-                Thread.sleep(1000);
             }
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
